@@ -12,6 +12,7 @@
 }
 *{
    font-family: 'Libre';
+   /* outline: solid red 1px; */
 }
 body{
     margin: 0px;
@@ -94,34 +95,40 @@ body{
     color: #fff;
     font-size: 24px;
     padding: 20px;
+    cursor: pointer;
 }
 .img-form{
    display: flex;
-   gap: 40px;
-   padding: 40px 40px 40px 40px;
-   justify-content: center;
-   align-items: center;
+   padding: 45px;
+   gap: 20px;
 }
-.guarantee_banner{
+.guarantee-banner{
     width: 100%;
     height: auto;
- }
+    box-shadow: 0px 10px 10px rgba(0, 0, 0, 0.2);
+}
 .form-content{
     background-image: url(../assets/images/form_bg.jpg);
-    width: calc(100% - 80px);  
+    background-size: cover;
+    width: 100%;  
     background-repeat: no-repeat;
+    background-position: top;
+    box-shadow: 0px 10px 10px rgba(0, 0, 0, 0.2);
     height: 100%;
+    margin: 0;
 }
 .p1-form{
-   margin: 0;
-   padding: 10px;
-   background-color: #911d1d;
-   color: #fff;
-   font-family: 'Libre';
-   font-size: 34px;
-   height: 45px;
-   width: 225px;
-   align-items: center;
+    background-color: #B00704;
+    color: #fff;
+    font-family: 'Libre';
+    font-size: 26px;
+    height: 32px;
+    width: 34%;
+    align-items: center;
+    margin-top: 0;
+    padding: 0.15em;
+    padding-left: 0.35em;
+    letter-spacing: 2px;
 }
 .span-form{
     display: flex;
@@ -129,11 +136,12 @@ body{
     gap: 20px;
 }
 .p2-form{
-    margin-top: -2px;
-    font-size: 30px;
+    margin-top: -0.5px;
+    font-size: 28px;
     color: #000;
     padding-left: 10px;
-    font-weight: 700;
+    padding-right: 20px;
+    font-weight: bold;
 }
 .span-qn{
     font-size: 34px;
@@ -148,26 +156,75 @@ body{
 .name-label, .email-label, .phone-label{
     font-size: 18px;
     font-family: 'Libre-Bold';
+    padding-left: 40px;
 }
 .name-text, .email-text, .phone-text{
-    width: 200px;
+    width: 160px;
     height: 30px;
     margin-left: 10px;
 }
-.email-text{
-    margin-left: 12px;
+.email-text {
+    margin-left: 15px;
+}
+.name-text{
+    margin-left: 17px;
 }
 .form-elements{
     display: flex;
     width: 100%;
-    padding: 35px;
-    gap: 20px;
+    gap: 30px;
 }
 .confidential{
     display: block;
-    margin: 20px auto 0;
-    transform: rotate(25deg);
-    padding-left: 25px;
+    width: 120%;
+    height: auto;
+    margin: 30px 0 0;
+    transform: rotate(12deg);
+    padding-top: 10px;
+}
+.comment-box{
+    margin-left: 50px;
+    font-family: 'Libre-Bold';
+    width: 80%;
+    height: 78px;
+    font-weight: bolder;
+    color: #374151;
+    font-size: 24px;
+    padding: 8px;
+}
+.form-bottom{
+    padding-top: 6px;
+    display: flex;
+    gap: 10px;
+    justify-content: center;
+    align-items: center;
+}
+.form-guarantee{
+    font-family: 'Libre-Italic';
+    font-weight: lighter;
+    color: #4B5563;
+    font-size: 16px;
+}
+.button-ask{
+    background-image: linear-gradient(#b00704, #911d1d);
+    color: #fff;
+    border: solid #b00704;
+    border-radius: 2px;
+    padding: 16px 12px 16px 12px;
+    font-size: 18px;
+    display: flex;
+    align-items: center; 
+    justify-content: space-between;
+    cursor: pointer;
+    font-weight: bolder;
+    letter-spacing: 2px;
+    font-family: 'Libre-Bold';
+    height: 45px;
+}
+.arrow{
+    margin-left: 8px;
+    width: 14px;
+    height: 14px;
 }
 @media screen and (max-width: 1160px){
     .logo-nav-bar{
@@ -191,6 +248,9 @@ body{
     }
     .text-1{
         font-size: 18px;
+    }
+    .confidential{
+        width: auto;
     }
 }
 @media screen and (max-width: 1028px){
