@@ -333,7 +333,6 @@ body{
     font-family: 'Libre-Bold';
 }
 .text-box-1{
-    /* padding-right: 44px; */
     margin-top: -14px;
 }
 .text-img{
@@ -379,6 +378,7 @@ body{
 .section-1, .section-2, .section-3, .section-4{
     background-color: #888084;
     width: auto;
+    height: auto;
     background-image: url('./assets/images/bg-red.gif'); 
     background-repeat: no-repeat;
     background-position: left top;
@@ -386,14 +386,17 @@ body{
 }
 .h-1{
     font-family: 'Libre-Bold';
-    font-size: 24px;
-    color: #fff;
-    padding: 14px;
-    margin-bottom: -4px;
-}
-.t-1{
     font-size: 22px;
     color: #fff;
+    padding-left: 14px;
+    padding-top: 8px;
+    margin-bottom: -4px;
+    letter-spacing: 2px;
+}
+.t-1{
+    font-size: 20px;
+    color: #fff;
+    letter-spacing: 2px;
 }
 .make-btn{
     display: flex;
@@ -405,6 +408,24 @@ body{
 .arrow-red{
     width: 14px;
     height: 19px;
+}
+.section-2a{
+    justify-content: center;
+    align-content: center;
+    padding: 40px;
+}
+.h-2{
+    color: #616161;
+    font-family: 'Libre-Bold';
+    font-size: 28px;
+    line-height: none;
+    margin-bottom: -8px;
+}
+.p-2{
+    color: #9E9E9E;
+    font-family: 'Libre-Bold';
+    line-height: 40px;
+    font-size: 24px;
 }
 @media screen and (max-width: 1160px){
     .logo-nav-bar{
