@@ -382,8 +382,15 @@ body{
 .section-1, .section-2, .section-3, .section-4{
     background-color: #888084;
     width: 250px;
+    position: relative;
     height: auto;
-    border-left: 8px solid linear-gradient(#911d1d, #000);
+}
+.line{
+    width: 12px;
+    height: 100%;
+    position: absolute;
+    left: 0px;
+    background: linear-gradient(to bottom, maroon 50%, black);
 }
 /* .item-1, .item-2, .item-3{
     padding: 24px;
@@ -515,6 +522,9 @@ body{
     }
     .logo-icon{
         width: 100%;
+    }
+    .img-form{
+        flex-direction: column;
     }
 
 }
