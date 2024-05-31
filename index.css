@@ -327,7 +327,9 @@ body{
 .box-head{
     color: #616161;
     font-family: 'Libre-Bold';
-    font-size: 28px;}
+    font-size: 28px;
+    letter-spacing: 2px;
+}
 .box-span{
     color: #7F1D1D;
     font-family: 'Libre-Bold';
@@ -374,19 +376,29 @@ body{
 .lower-section{
     display: flex;
     padding-left: 50px;
+    align-items: center;
+    gap: 58px;
 }
 .section-1, .section-2, .section-3, .section-4{
     background-color: #888084;
-    width: auto;
+    width: 250px;
     height: auto;
-    background-image: url('./assets/images/bg-red.gif'); 
-    background-repeat: no-repeat;
-    background-position: left top;
-    object-fit: cover; 
+    border-left: 8px solid linear-gradient(#911d1d, #000);
+}
+/* .item-1, .item-2, .item-3{
+    padding: 24px;
+}*/
+.item-3{
+    padding-right: 14px;
+}
+.item-2{
+    width: 50%;
+    padding-left: 14px;
+    padding-right: 14px;
 }
 .h-1{
     font-family: 'Libre-Bold';
-    font-size: 22px;
+    font-size: 18px;
     color: #fff;
     padding-left: 14px;
     padding-top: 8px;
@@ -409,10 +421,22 @@ body{
     width: 14px;
     height: 19px;
 }
+.menu-text{
+    display: flex;
+    justify-content: center;
+}
+.p-menu{
+    color: #bdbdbd;
+    font-family: 'Libre-Bold';
+    line-height: 38px;
+    font-size: 26px;
+    letter-spacing: 2px;
+}
 .section-2a{
     justify-content: center;
     align-content: center;
     padding: 40px;
+    width: 50%;
 }
 .h-2{
     color: #616161;
@@ -424,8 +448,62 @@ body{
 .p-2{
     color: #9E9E9E;
     font-family: 'Libre-Bold';
-    line-height: 40px;
-    font-size: 24px;
+    line-height: 34px;
+    font-size: 18px;
+}
+.section-button{
+    display: flex;
+    justify-content: end;
+    padding-right: 20px;
+}
+.p-3{
+    padding-right: 48px;
+    color: #9E9E9E;
+    font-family: 'Libre-Bold';
+    line-height: none;
+    font-size: 20px;
+}
+.images-lower{
+    display: grid;
+    justify-content: center;
+    align-content: center;
+    gap: 40px;
+}
+/* .nc-low{
+    width: 90%;
+} */
+.rating-low{
+    width: 90%;
+}
+.box-head-low{
+    color: #616161;
+    font-family: 'Libre-Bold';
+    font-size: 28px;
+    letter-spacing: 1px;
+}
+
+.hr-low{
+    background-color: #616161;
+    margin-top: -14px;
+    height: 2px;
+}
+.follow-text-icons{
+    display: flex;
+    justify-content: center;
+}
+.icons{
+    display: flex;
+    gap: 10px;
+    justify-content: center;
+}
+ .fb, .google, .twitter, .linked-in{
+    width: 35px;
+    height: auto;
+} 
+.bottom-border{
+    background-color: linear-gradient( #b91c1c, #7f1d1d);
+    width: 100%;
+    height: 20px;
 }
 @media screen and (max-width: 1160px){
     .logo-nav-bar{
