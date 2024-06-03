@@ -194,7 +194,7 @@ body{
 .comment-box{
     margin-left: 50px;
     font-family: 'Libre-Bold';
-    width: 80%;
+    width: 82%;
     height: 78px;
     font-weight: bolder;
     color: #374151;
@@ -531,8 +531,13 @@ body{
     }
     .img-form{
         flex-direction: column;
+        padding-left: none;
+        padding-right: none;
     }
-
+    .form-bottom{
+        justify-content: center;
+        flex-direction: column;
+    }
 }
 @media screen and (max-width:525px){
     .head-1{
@@ -544,9 +549,7 @@ body{
     .text-1{
         font-size: 18px;
     }
-    .confidential{
-        width: auto;
-    }
+
 }
 @media screen and (max-width: 1028px){
     .nav-item{
@@ -563,16 +566,36 @@ body{
         display: flex;
     }
     .middle-section{
-        flex-direction: row;
+        flex-direction: column;
+        padding: none;
+    }
+    .inner-button{
+        height: auto;
     }
     .item-1, .item-2, .item-3{
         padding: none;
+        width: 100%;
     }
     .column-1, .column-2, .column-3{
         padding: none;
+        width: 100%;
+        justify-content: center;
+        align-items: center;
+    }
+    .box-head{
+        justify-content: center;
+        align-items: center;
     }
     .box-1, .box-2{
         border: none;
+        width: 100%;
+        padding: none;
+        justify-content: center;
+        align-items: center;
+    }
+    .text-box-3{
+        justify-content: center;
+        align-items: center;
     }
     .p-2{
         padding: none;
@@ -581,6 +604,13 @@ body{
         display: none;
     }
 }
-@media only screen and (max-width:997px) {
+@media only screen and (max-width:625px) {
+   .confidential{
+    padding: none;
+    margin: none;
+    width: 140px;
+    height: 60px;
+    position: static;
+   }
    
 }
