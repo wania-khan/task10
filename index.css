@@ -12,7 +12,7 @@
 }
 *{
    font-family: 'Libre';
-   /* outline: solid red 1px; */
+   outline: solid red 1px;
 }
 body{
     margin: 0px;
@@ -65,34 +65,33 @@ body{
     letter-spacing: 2px;
 }
 .nav-home{
-    width: 100%;
-    height: 70px;
+    height: 50px;
     background-image: linear-gradient(#b82424, #911d1d);
-    display: flex;
     gap: 12px;
-    align-items: center;
     margin-top: -20px;
 }
 .item-bar{
+    max-width: 1260px;
+    margin: auto;
     display: flex;
     justify-content: end;
     align-items: center;
-    overflow: hidden;
+    padding-right: 21px;
 }
 .menu {
     display: none; 
     position: relative;
-    left: 0.5rem;
-    top: 0.4rem;
+    left: 0.5rem;  
+    top: 1.4rem;
     flex-direction: column;
     justify-content: space-between;
     align-items: center;
-    width: 2.25rem;
-    height: 2rem;
+    width: 2rem;
+    height: 1.25rem;
 }
 .menu span {
     display: block; 
-    height: 0.4rem;
+    height: 0.2rem;
     width: 100%;
     background-color: white;
     border-radius: 0.2rem;
@@ -183,13 +182,16 @@ body{
     width: 100%;
     gap: 30px;
 }
+.form-c{
+    width: 35%;
+    height: 65px;
+    position: relative;
+}
 .confidential{
-    display: block;
-    width: 120%;
-    height: auto;
-    margin: 30px 0 0;
+    height: 50px;
+    width: 100%;
+    margin: 60px 0 0;
     transform: rotate(12deg);
-    padding-top: 10px;
 }
 .comment-box{
     margin-left: 50px;
@@ -381,7 +383,7 @@ body{
 }
 .lower-section{
     display: flex;
-    padding-left: 50px;
+    padding: 0px 20px 0px 20px;
     align-items: center;
     gap: 58px;
 }
@@ -549,8 +551,8 @@ body{
     }
     .boxes{
         display: flex;
+        flex-direction: row;
         gap: 8px;
-        flex-basis: 100%;
     }
     .item-1, .item-2, .item-3{
         padding: none;
@@ -562,9 +564,7 @@ body{
     .breaks{
         display: none;
     }
-    /* .bottom-border{
-        display: none;
-    } */
+
     .images-lower{
         display: flex;
     }
@@ -647,18 +647,3 @@ body{
         display: none;
     }
 }
-@media only screen and (max-width:625px) {
-   .confidential{
-    padding: none;
-    margin: none;
-    width: 140px;
-    height: 60px;
-    position: static;
-   }
-   
-}
-/* @media only screen and(max-width:756px){
-    .navbar-info{
-        display: none;
-    }
-} */
