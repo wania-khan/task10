@@ -18,7 +18,7 @@ body{
     margin: 0px;
     width: 100%;
 }
-.content-whole{
+.container{
     justify-content: center;
     align-items: center;
     margin: 0 auto;
@@ -31,14 +31,11 @@ body{
     margin: 0;
 }
 .logo-icon{
-    height: 150px;
     width: 100%;
-    object-fit: fill;
-    display: block;
+    height: 200px;
     margin: 0;
 }
 .navbar-info{
-    margin-top: 5px;
     padding-right: 60px;
 }
 .head-1{
@@ -52,7 +49,6 @@ body{
     background-color: #1F2937;
     width: auto;
     height: 4px;
-    margin-bottom: -8px;
 }
 .head-2{
     font-family: 'Libre-Bold';
@@ -67,7 +63,6 @@ body{
     font-family: 'Libre-Bold';
     font-size: 24px;
     letter-spacing: 2px;
-    margin-top: -18px;
 }
 .nav-home{
     width: 100%;
@@ -75,9 +70,15 @@ body{
     background-image: linear-gradient(#b82424, #911d1d);
     display: flex;
     gap: 12px;
-    justify-content: end;
     align-items: center;
     margin-top: -20px;
+}
+.item-bar{
+    margin: auto;
+    display: flex;
+    justify-content: end;
+    align-items: center;
+    overflow: hidden;
 }
 .menu {
     display: none; 
@@ -85,17 +86,16 @@ body{
     left: 0.5rem;
     flex-direction: column;
     justify-content: space-between;
+    align-items: center;
     width: 2.25rem;
     height: 2rem;
 }
-
 .menu span {
     display: block; 
     height: 0.4rem;
     width: 100%;
     background-color: white;
     border-radius: 0.2rem;
-    margin-bottom: 5px;  
 }
 .nav-item{
     color: #fff;
@@ -482,9 +482,6 @@ body{
     align-content: center;
     gap: 40px;
 }
-/* .nc-low{
-    width: 90%;
-} */
 .rating-low{
     width: 90%;
 }
@@ -522,9 +519,14 @@ body{
     .logo-nav-bar{
         flex-direction: column;
     }
+    .menu{
+        display: flex;
+    }
     .navbar-info{
-        padding: none;
-        margin-top: none;
+        display: none;
+    }
+    .item-bar{
+        display: none;
     }
     .logo-icon{
         width: 100%;
@@ -549,7 +551,6 @@ body{
         display: flex;
         gap: 8px;
         flex-basis: 100%;
-
     }
     .item-1, .item-2, .item-3{
         padding: none;
@@ -561,9 +562,9 @@ body{
     .breaks{
         display: none;
     }
-    .bottom-border{
+    /* .bottom-border{
         display: none;
-    }
+    } */
     .images-lower{
         display: flex;
     }
@@ -606,9 +607,6 @@ body{
     .nav-home{
         height: 55px;
         justify-content: start;
-    }
-    .menu{
-        display: flex;
     }
     .middle-section{
         flex-direction: column;
@@ -659,8 +657,8 @@ body{
    }
    
 }
-@media only screen and(max-width:756px){
+/* @media only screen and(max-width:756px){
     .navbar-info{
         display: none;
     }
-}
+} */
