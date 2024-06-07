@@ -74,7 +74,6 @@ body{
     margin-top: -20px;
 }
 .item-bar{
-    margin: auto;
     display: flex;
     justify-content: end;
     align-items: center;
@@ -84,6 +83,7 @@ body{
     display: none; 
     position: relative;
     left: 0.5rem;
+    top: 0.4rem;
     flex-direction: column;
     justify-content: space-between;
     align-items: center;
