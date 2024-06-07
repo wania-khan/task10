@@ -549,11 +549,6 @@ body{
     .lower-section{
         flex-direction: column;
     }
-    .boxes{
-        display: flex;
-        flex-direction: row;
-        gap: 8px;
-    }
     .item-1, .item-2, .item-3{
         padding: none;
         width: 100%;
@@ -624,6 +619,20 @@ body{
         width: 100%;
         justify-content: center;
         align-items: center;
+    }
+    .boxes{
+        display: block;
+    }
+    .section-1, .section-2, .section-3, .section-4{
+        width: 100%;
+    }
+    .h-1, .t-1{
+        font-size: 30px;
+        padding-left: 28px;
+    }
+    .arrow-red{
+        width: 24px;
+        height: 24px;
     }
     .box-head{
         justify-content: center;
