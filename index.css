@@ -1464,6 +1464,22 @@ body{
         width: 288px;
     }
 }
+@media screen and(max-width:586px) {
+    .comment-box{
+       margin-left: none;
+       width: auto;
+    }
+    /* .form-c{
+        width: auto;
+        position: none;
+    }
+    .confidential{
+        width: auto;
+    } */
+    .form-elements{
+        flex-direction: column;
+    }
+}
 @media(max-width:495px){
     .container{
     max-width: 350px;
@@ -1742,7 +1758,7 @@ body{
     }
     .confidential {
         width: 60%;
-        margin: 26px auto 0; /* Center align the image */
+        margin: 26px auto 0; 
     }
     .form-bottom {
         justify-content: center;
