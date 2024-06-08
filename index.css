@@ -7,9 +7,9 @@
     src: url(./assets/fonts/LibreFranklin-Bold.ttf);
 }
 @font-face {
-    font-family: 'Libre-Italic';
-    src: url(./assets/fonts/LibreFranklin-Italic.ttf);
-}
+    font-family:"Tinos Bold";
+    src: url(./assets/fonts/Tinos-Bold.ttf);
+  }  
 /* *{
    outline: solid red 1px;
 } */
