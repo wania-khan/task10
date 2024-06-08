@@ -194,14 +194,14 @@ body{
     gap: 12px;
 }
 .form-c{
-    width: 40%;
+    width: 42%;
     height: 65px;
     position: relative;
 }
 .confidential{
     height: 60px;
     width: 100%;
-    margin: 26px 0 0;
+    margin: 24px 0 0;
     transform: rotate(11.5deg);
 }
 .comment-box{
