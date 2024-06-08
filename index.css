@@ -618,7 +618,11 @@ body{
         justify-content: center;
     }
 }
-
+@media screen and (min-width:1296px){
+    .column-3{
+        width: 100%;
+    }
+}
 @media screen and (max-width: 1028px) {
     .nav-item {
         display: none;
@@ -645,11 +649,14 @@ body{
         padding: none;
         width: 100%;
     }
-    .column-1, .column-2, .column-3 {
+    .column-1, .column-2{
         padding: none;
         width: 100%;
         justify-content: center;
         align-items: center;
+    }
+    .column-3{
+        width: auto;
     }
     .text-and-img-inner {
         gap: 20px;
@@ -667,7 +674,6 @@ body{
     }
     .box-1, .box-2 {
         border: none;
-        width: 100%;
         padding: none;
         justify-content: center;
         align-items: center;
