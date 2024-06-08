@@ -61,6 +61,11 @@ body{
     margin-top: 28px;
     margin-bottom: 28px;
 }
+@media (max-width: 600px) {
+    .confidential {
+        display: none;
+    }
+}
 .text-1{
     color: #616161;
     font-family: 'Libre-Bold';
@@ -114,12 +119,16 @@ body{
    gap: 30px;
    height: 100%;
 }
-.guarantee-img{
+
+.guarantee-img {
     width: 52%;
 }
+
+
 .form-space{
     width: 48%;
 }
+
 .guarantee-banner{
     width: 100%;
     height: 100%;
@@ -136,7 +145,7 @@ body{
     margin: 0;
     font-family: 'Libre';
 }
-.p1-form{
+.p1-form {
     background-color: #B00704;
     color: #fff;
     font-family: 'Libre';
@@ -149,10 +158,22 @@ body{
     padding-left: 0.35em;
     letter-spacing: 2px;
 }
-.span-form{
+
+@media (max-width: 700px) {
+    .p1-form {
+width: auto;
+    }
+}
+.span-form {
     display: flex;
     margin: 0;
     gap: 20px;
+}
+
+@media (max-width: 700px) {
+    .span-form {
+        display: block;
+    }
 }
 .p2-form{
     margin-top: -0.5px;
@@ -205,7 +226,7 @@ body{
     margin: 24px 0 0;
     transform: rotate(11.5deg);
 }
-.comment-box{
+.comment-box {
     margin-left: 50px;
     font-family: 'Libre-Bold';
     width: 82%;
@@ -213,6 +234,12 @@ body{
     color: #374151;
     font-size: 24px;
     padding: 8px;
+}
+
+@media (max-width: 600px) {
+    .comment-box {
+        margin-left: 10px;
+    }
 }
 .form-bottom{
     padding-top: 6px;
@@ -227,6 +254,16 @@ body{
     font-weight: lighter;
     color: #4B5563;
     font-size: 16px;
+}
+.small-image-confidential {
+    display: none;
+}
+
+@media (max-width: 600px) {
+    .small-image-confidential {
+        display: block;
+        margin: 11px;
+    }
 }
 .button-ask{
     background-image: linear-gradient(#b00704, #911d1d);
@@ -1464,22 +1501,6 @@ body{
         width: 288px;
     }
 }
-@media screen and(max-width:586px) {
-    .comment-box{
-       margin-left: none;
-       width: auto;
-    }
-    /* .form-c{
-        width: auto;
-        position: none;
-    }
-    .confidential{
-        width: auto;
-    } */
-    .form-elements{
-        flex-direction: column;
-    }
-}
 @media(max-width:495px){
     .container{
     max-width: 350px;
@@ -1758,7 +1779,7 @@ body{
     }
     .confidential {
         width: 60%;
-        margin: 26px auto 0; 
+        margin: 26px auto 0; /* Center align the image */
     }
     .form-bottom {
         justify-content: center;
