@@ -85,7 +85,7 @@ body{
     display: none; 
     position: relative;
     left: 0.5rem;  
-    top: 1.4rem;
+    top: 1rem;
     flex-direction: column;
     justify-content: space-between;
     align-items: center;
@@ -110,12 +110,19 @@ body{
 }
 .img-form{
    display: flex;
-   padding: 45px;
-   gap: 20px;
+   padding: 30px;
+   gap: 30px;
+   height: 100%;
+}
+.guarantee-img{
+    width: 52%;
+}
+.form-space{
+    width: 48%;
 }
 .guarantee-banner{
     width: 100%;
-    height: auto;
+    height: 100%;
     box-shadow: 0px 10px 10px rgba(0, 0, 0, 0.5);
 }
 .form-content{
@@ -200,7 +207,6 @@ body{
     margin-left: 50px;
     font-family: 'Libre-Bold';
     width: 82%;
-    height: 78px;
     font-weight: bolder;
     color: #374151;
     font-size: 24px;
@@ -212,6 +218,7 @@ body{
     gap: 10px;
     justify-content: center;
     align-items: center;
+    margin-bottom: 10px;
 }
 .form-guarantee{
     font-family: 'Libre-Italic';
@@ -247,14 +254,18 @@ body{
     align-items: center;
     border: solid #f4f2f2 1px;
     border-bottom: none;
-    padding: 0px 20px 0px 20px;
 }
 .column-1{
-    width: 30%;
-    
+    /* width: 30%; */
+    width: auto;
 }
-.p-text{
+/* .p-text{
     padding-right: 24px;
+} */
+.content{
+    padding-left: 80px;
+    padding-right: 50px;
+    height: fit-content;
 }
 .head-inner{
     color: #616161;
@@ -276,19 +287,20 @@ body{
 }
 .text-and-img-inner{
     display: flex;
+    height: auto;
     gap: 8px;
 }
 .text-inner-column-1, .p-text{
     color: #9E9E9E;
     font-family: 'Libre-Bold';
-    font-size: 20px;
+    font-size: 18px;
     line-height: 32px;
 }
 .clipboard{
     margin-top: 10px;
     margin-right: 20px;
-    width: 90px;
-    height: auto;
+    width: 110px;
+    height: 150px;
 }
 .inner-button{
     background-image: linear-gradient(#b00704, #911d1d);
@@ -319,12 +331,14 @@ body{
 }
 .column-2{
     display: grid;
-    width: 50%;
+    /* width: 50%; */
+    width: auto;
 }
 .box-1{
     border-left: solid #dbdbdb 2px;
     border-right: solid #dbdbdb 2px;
     padding: 30px;
+    width: auto;
     height: auto;
 }
 .box-2{
@@ -332,6 +346,7 @@ body{
     border-right: solid #dbdbdb 2px;
     border-top:  solid #dbdbdb 2px;
     padding: 30px;
+    width: auto;
     height: auto;
 }
 .box-head{
@@ -365,7 +380,8 @@ body{
 }
 .column-3{
     padding: 38px;
-    width: 30%;
+    /* width: 30%; */
+    width: auto;
 }
 .img-box{
     display: flex;
@@ -519,142 +535,163 @@ body{
     background: linear-gradient(to bottom, maroon 50%, black);
     margin-top: 50px;
 }
-@media screen and (max-width: 1160px){
-    .logo-nav-bar{
+@media screen and (max-width: 1160px) {
+    .logo-nav-bar {
         flex-direction: column;
     }
-    .menu{
+    .menu {
         display: flex;
     }
-    .navbar-info{
+    .navbar-info {
         display: none;
     }
-    .item-bar{
+    .item-bar {
         display: none;
     }
-    .logo-icon{
+    .logo-icon {
         width: 100%;
     }
-    .img-form{
+    .img-form {
         flex-direction: column;
-        padding-left: none;
-        padding-right: none;
+        padding: none;
+        justify-content: center;
+        align-items: center;
+        height: 100%;
+        gap: 20px;
     }
-    .form-bottom{
+    .form-space, .guarantee-img {
+        width: 100%;
+    }
+    .confidential {
+        width: 60%;
+        margin: 26px auto 0; /* Center align the image */
+    }
+    .form-bottom {
         justify-content: center;
         flex-direction: column;
+        padding-bottom: 12px;
     }
-    .section-2a{
+    .section-2a {
         padding: none;
         width: 100%;
     }
-    .lower-section{
+    .lower-section {
         flex-direction: column;
     }
-    .section-1, .section-2, .section-3, .section-4{
+    .section-1, .section-2, .section-3, .section-4 {
         width: 100%;
     }
-    .h-1, .t-1{
+    .h-1, .t-1 {
         font-size: 30px;
         padding-left: 28px;
     }
-    .arrow-red{
+    .arrow-red {
         width: 24px;
         height: 24px;
     }
-    .item-1, .item-2, .item-3{
+    .item-1, .item-2, .item-3 {
         padding: none;
         width: 100%;
     }
-    .make-btn{
+    .make-btn {
         padding: none;
     }
-    .breaks{
+    .breaks {
         display: none;
     }
-
-    .images-lower{
+    .images-lower {
         display: flex;
     }
-    .rating-low{
+    .rating-low {
         width: auto;
     }
-    .nc-low{
+    .nc-low {
         width: auto;
-
     }
-    .follow-text-icons{
+    .follow-text-icons {
         width: 100%;
     }
-    .icons{
+    .icons {
         width: 100%;
     }
-    .column-2{
+    .column-2 {
         justify-content: center;
     }
 }
-@media screen and (max-width:525px){
-    .head-1{
-       font-size: 20px;
-    }
-    .head-2{
-        font-size: 30px
-    }
-    .text-1{
-        font-size: 18px;
-    }
 
-}
-@media screen and (max-width: 1028px){
-    .nav-item{
+@media screen and (max-width: 1028px) {
+    .nav-item {
         display: none;
     }
-    .text-1{
+    .text-1 {
         margin-top: 2px;
     }
-    .nav-home{
+    .nav-home {
         height: 55px;
         justify-content: start;
     }
-    .middle-section{
-        flex-direction: column;
-        padding: none;
+    .middle-section {
+        display: grid;
+        padding: 0px 0px 0px 0px;
     }
-    .inner-button{
+    .content, .text-col {
+        padding-left: none;
+        padding-right: none;
+    }
+    .inner-button {
         height: auto;
     }
-    .item-1, .item-2, .item-3{
+    .item-1, .item-2, .item-3 {
         padding: none;
         width: 100%;
     }
-    .column-1, .column-2, .column-3{
+    .column-1, .column-2, .column-3 {
         padding: none;
         width: 100%;
         justify-content: center;
         align-items: center;
     }
-    .boxes{
+    .text-and-img-inner {
+        gap: 20px;
+    }
+    .column-1 {
+        padding-left: none;
+        width: 100%;
+    }
+    .boxes {
         display: block;
     }
-    .box-head{
+    .box-head {
         justify-content: center;
         align-items: center;
     }
-    .box-1, .box-2{
+    .box-1, .box-2 {
         border: none;
         width: 100%;
         padding: none;
         justify-content: center;
         align-items: center;
     }
-    .text-box-3{
+    .text-box-3 {
         justify-content: center;
         align-items: center;
     }
-    .p-2{
+    .p-2 {
         padding: none;
     }
-    .breaks{
+    .breaks {
         display: none;
+    }
+}
+
+@media screen and (max-width: 525px) {
+    .head-1 {
+        font-size: 20px;
+    }
+    .head-2 {
+        font-size: 30px;
+    }
+    .text-1 {
+        font-size: 18px;
     }
 }
