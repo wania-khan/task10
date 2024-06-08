@@ -541,8 +541,13 @@ body{
     }
     .menu {
         display: flex;
+        padding-right: 38px;
+        margin-left: auto;
     }
-    .navbar-info {
+    .hr{
+        width: 600px;
+    }
+    .navbar-info{
         display: none;
     }
     .item-bar {
