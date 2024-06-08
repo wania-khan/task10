@@ -477,7 +477,7 @@ body{
     color: maroon;
 }
 #box1{
-    font-family: "Poppins Medium";
+    /* font-family: "Libre"; */
     background-color:gray;
     max-width: 275px;
     display: flex;
@@ -485,13 +485,13 @@ body{
     font-size: 15px;
     box-shadow: 0 10px 10px -10px rgba(0, 0, 0, 500);
 }
-#box1 h2{
-    font-family: "Poppins SemiBold";
+/* #box1 h2{
     margin-bottom: -5px;
-}
+} */
 #box1-para{
-    padding: 5px 12px;
-    color: white;    
+    padding: 5px 8px;
+    color: white;  
+    font-family: "Libre";  
 }
 #box1-para h4{
     font-family: "Poppins SemiBold";
@@ -518,7 +518,7 @@ body{
     margin-left: 5px;
 }
 #menu-area{
-    font-family: "Poppins Medium";
+    font-family: "Libre";
     margin-top: 60px;
     font-size: 14px;
     color: rgba(128, 128, 128, 0.323);
