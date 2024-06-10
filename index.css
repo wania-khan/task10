@@ -9,7 +9,11 @@
 @font-face {
     font-family:"Tinos Bold";
     src: url(./assets/fonts/Tinos-Bold.ttf);
-  }  
+}  
+  @font-face {
+    font-family:"Tinos Italic";
+    src: url(./assets/fonts/Tinos-Italic.ttf);
+}  
 /* *{
    outline: solid red 1px;
 } */
@@ -129,7 +133,6 @@ body{
 .form-space{
     width: 48%;
 }
-
 .guarantee-banner{
     width: 100%;
     height: 100%;
@@ -232,11 +235,12 @@ width: auto;
     font-family: 'Libre-Bold';
     width: 82%;
     font-weight: bolder;
-    color: #374151;
     font-size: 24px;
     padding: 8px;
 }
-
+.comment-box::placeholder{
+    color: #374151;
+}
 @media (max-width: 600px) {
     .comment-box {
         margin-left: 10px;
@@ -251,7 +255,7 @@ width: auto;
     margin-bottom: 10px;
 }
 .form-guarantee{
-    font-family: 'Libre-Italic';
+    font-family: 'Tinos Italic';
     font-weight: lighter;
     color: #4B5563;
     font-size: 16px;
@@ -362,6 +366,7 @@ width: auto;
     font-size: 15px;    
     color: #ffffffd4;
     display: flex;
+    cursor: pointer;
     align-items: center;
     box-shadow: 0 5px 10px rgba(0, 0, 0, 0.3), /* bottom-center shadow */
     5px 0 10px rgba(0, 0, 0, 0.3), /* right-center shadow */
@@ -518,26 +523,33 @@ width: auto;
     /* font-family: "Libre"; */
     background-color:gray;
     max-width: 275px;
+    height: 75px;
     display: flex;
     margin-top: 20px;
     font-size: 15px;
     box-shadow: 0 10px 10px -10px rgba(0, 0, 0, 500);
 }
+.cursor{
+    cursor: pointer;
+}
 /* #box1 h2{
     margin-bottom: -5px;
 } */
 #box1-para{
-    padding: 5px 8px;
+    padding: 5px 5px;
     color: white;  
     font-family: "Libre";  
+}
+#box1-para h2{
+    margin-top: 5px;
 }
 #box1-para h4{
     font-family: "Poppins SemiBold";
     align-items: center;
     display: flex;
     margin-left: 125px;
-    max-width: 400px;
-    margin-top: 7px;
+    max-width: 200px;
+    margin-top: -8px;
 }
 #box1-para img{
     height: 15px;
