@@ -120,7 +120,8 @@ body{
    height: 100%;
 }
 .no-span{
-    font-weight: 800;
+    font-weight: bolder;
+    font-family: "Libre-Bold";
 }
 .guarantee-img {
     width: 52%;
