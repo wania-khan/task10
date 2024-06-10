@@ -119,12 +119,12 @@ body{
    gap: 30px;
    height: 100%;
 }
-
+.no-span{
+    font-weight: 800;
+}
 .guarantee-img {
     width: 52%;
 }
-
-
 .form-space{
     width: 48%;
 }
